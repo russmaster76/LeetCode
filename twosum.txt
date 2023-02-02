@@ -1,0 +1,9 @@
+Twosum gives a list and asks to return the two indexes of numbers within the list that add to a target value. The list cannot have duplicates.
+The indexes can be returned in any order.
+
+This solution for twosum works in O(n) time. The solution works using a dictionary (hashmap) in order to track the different indexes and values.
+The key for the hashmap are the values within the given list, while the value of the hashmap is the index of the corresponding key.
+We accomplish this in O(n) time using a for loop, enumerating through the list, we look at the difference between our target value and and our current value.
+We check if it is contained within the hashmap. Because the difference will be the value we need to add to the target, if it within the hashmap we know that the
+necessary number is within the list and we can return the index of our current value in the list and the index of the difference in the list, 
+if it is not within the hashmap we add the value to the hashmap as a key-value pair and continue to the next value within the list.
