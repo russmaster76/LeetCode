@@ -9,7 +9,7 @@ class Solution(object):
         
         for n in nums:
             if(n-1) not in containsNums:
-                length = 0
+                length = 1
                 while(n + length in containsNums):
                     length += 1
                 longest = max(length, longest)
